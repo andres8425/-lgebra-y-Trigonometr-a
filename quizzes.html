@@ -1,8 +1,45 @@
-<img src="../assets/images/Diapositiva2.PNG" alt="Imagen interactiva">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizzes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .figure{
+      position: relative;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+    .figure img{
+      width: 100%;
+      display: block;
+    }
+
+    /* Hotspot invisible */
+    .hotspot{
+      position: absolute;
+      cursor: pointer;
+      background: transparent;
+      border: 2px solid transparent;
+      border-radius: 14px;
+      transition: all 0.15s ease;
+    }
+
+    /* Solo al pasar el mouse */
+    .hotspot:hover{
+      background: rgba(122,162,255,0.18);
+      border: 2px dashed rgba(122,162,255,0.6);
+    }
+  </style>
+</head>
+
 <body>
 
+<h1 style="text-align:center;">Quizzes interactivos</h1>
+
 <div class="figure">
-  <img src="../assets/images/Diapositiva2.PNG" alt="Imagen interactiva">
+  <img src="assets/images/Diapositiva2.PNG" alt="Imagen interactiva">
 
   <div class="hotspot"
        style="left:70%; top:14%; width:22%; height:18%;"
@@ -11,3 +48,4 @@
 </div>
 
 </body>
+</html>
